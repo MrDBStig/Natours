@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDBStig/Natours.git"
+  },
+  "author": "Mikita Kavaleuski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDBStig/Natours/issues"
+  },
+  "homepage": "https://github.com/MrDBStig/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {}
+}
