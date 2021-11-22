@@ -50,6 +50,16 @@
   background-color: $color-white;
 }
 
+.btn--green:link,
+.btn--green:visited {
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+.btn--green::after {
+  background-color: $color-primary;
+}
+
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
   animation: moveInBottom 0.5s ease-out 0.75s;
