@@ -1,5 +1,5 @@
 /* Buttons */
-
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -10,6 +10,8 @@
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -17,7 +19,9 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active,
+.btn:focus {
+  outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -50,6 +54,7 @@
   background-color: $color-white;
 }
 
+.btn--green,
 .btn--green:link,
 .btn--green:visited {
   color: $color-white;
