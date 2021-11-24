@@ -1,16 +1,18 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  /*font-size: 16px;*/
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 3rem;
 }
 
-// Headings
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
+
   -webkit-backface-visibility: hidden;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
@@ -19,15 +21,26 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    -webkit-animation: moveInLeft 1s ease-out;
-    animation: moveInLeft 1s ease-out;
+
+    -webkit-animation-name: moveInLeft;
+
+    animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
   }
 
   &--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
     -webkit-animation: moveInRight 1s ease-out;
     animation: moveInRight 1s ease-out;
   }
@@ -35,8 +48,8 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
-  font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(
     to right,
@@ -44,13 +57,13 @@ body {
     $color-primary-dark
   );
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  letter-spacing: 0.2rem;
   transition: all 0.2s;
-  letter-spacing: 2px;
+
   &:hover {
-    transform: skew(15deg, 2deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-black, $alpha: 0.2);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
@@ -62,6 +75,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

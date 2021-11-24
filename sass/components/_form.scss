@@ -4,26 +4,26 @@
   }
 
   &__input {
+    font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
-    font-size: 1.5rem;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white, $alpha: 0.5);
+    background-color: rbga($color-white, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    transition: all 0.2s;
     width: 90%;
     display: block;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-black, $alpha: 0.1);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid $color-primary;
+    }
 
-      &:invalid {
-        border-bottom: 3px solid $color-secondary-dark;
-      }
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary-dark;
     }
 
     &::-webkit-input-placeholder {
@@ -37,8 +37,7 @@
     margin-left: 2rem;
     margin-top: 0.7rem;
     display: block;
-    transition: all 0.3s ease;
-    transform: translateY(0);
+    transition: all 0.3s;
   }
 
   &__input:placeholder-shown + &__label {
@@ -48,8 +47,8 @@
   }
 
   &__radio-group {
-    display: inline-block;
     width: 49%;
+    display: inline-block;
   }
 
   &__radio-input {
@@ -57,8 +56,8 @@
   }
 
   &__radio-label {
-    cursor: pointer;
     font-size: $default-font-size;
+    cursor: pointer;
     position: relative;
     padding-left: 4.5rem;
   }
@@ -71,13 +70,13 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    top: -0.5rem;
+    top: -0.4rem;
 
     &::after {
       content: "";
       display: block;
-      width: 1.3rem;
       height: 1.3rem;
+      width: 1.3rem;
       border-radius: 50%;
       position: absolute;
       top: 50%;

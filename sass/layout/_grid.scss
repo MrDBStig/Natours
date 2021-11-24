@@ -1,8 +1,7 @@
-// GRID on floats
-
 .row {
-  max-width: $grid-with;
+  max-width: $grid-width;
   margin: 0 auto;
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -11,6 +10,7 @@
 
   [class^="col-"] {
     float: left;
+
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
